@@ -5,7 +5,7 @@
 ##############################################################################
 
 variable "TF_VERSION" {
- default = "0.12"
+ default = "0.13"
  description = "terraform engine version to be used in schematics"
 }
 
@@ -16,7 +16,7 @@ variable "generation" {
 }
 
 provider "ibm" {
-  ibmcloud_api_key      = var.ibmcloud_api_key
+  ibmcloud_api_key      = var.api_key
   generation            = var.generation
   region                = var.region
   ibmcloud_timeout      = 300
