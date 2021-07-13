@@ -6,11 +6,3 @@ terraform {
     }
   }
 }
-
-# Configure the IBM Provider
-provider "ibm" {
-  region           = "us-south"
-  ibmcloud_api_key = var.ibmcloud_api_key
-  generation       = 2
-
-}
